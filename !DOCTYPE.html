@@ -1,0 +1,4095 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanca-Türkçe Kelime Anlamları Quiz</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .question:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .question h2 {
+            margin: 0 0 10px;
+            font-size: 1.25em;
+            color: #333;
+        }
+
+        .answer input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        label {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 30px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Almanca-Türkçe Kelime Anlamları Quiz</h1>
+    <form id="quizForm">
+        <!-- Soru Şablonu -->
+        <div class="question">
+            <h2>1. Feierabend</h2>
+            <div class="answer">
+                <input type="radio" name="q1" value="Paydos" id="q1a">
+                <label for="q1a">Paydos</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q1" value="Gece" id="q1b">
+                <label for="q1b">Gece</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q1" value="Tatil" id="q1c">
+                <label for="q1c">Tatil</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q1" value="Doğum" id="q1d">
+                <label for="q1d">Doğum</label>
+            </div>
+        </div>
+        <div class="question">
+            <h2>2. verdient</h2>
+            <div class="answer">
+                <input type="radio" name="q2" value="Hak edilmiş" id="q2a">
+                <label for="q2a">Hak edilmiş</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q2" value="Harcanmış" id="q2b">
+                <label for="q2b">Harcanmış</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q2" value="Düşünceli" id="q2c">
+                <label for="q2c">Düşünceli</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q2" value="Saygılı" id="q2d">
+                <label for="q2d">Saygılı</label>
+            </div>
+        </div>
+        <!-- Diğer Sorular -->
+        <div class="question">
+            <h2>3. gelten</h2>
+            <div class="answer">
+                <input type="radio" name="q3" value="Geçerli olmak" id="q3a">
+                <label for="q3a">Geçerli olmak</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q3" value="Başvurmak" id="q3b">
+                <label for="q3b">Başvurmak</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q3" value="Duygulanmak" id="q3c">
+                <label for="q3c">Duygulanmak</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q3" value="Etkilemek" id="q3d">
+                <label for="q3d">Etkilemek</label>
+            </div>
+        </div>
+        <div class="question">
+            <h2>4. Betrieb</h2>
+            <div class="answer">
+                <input type="radio" name="q4" value="İşletme" id="q4a">
+                <label for="q4a">İşletme</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q4" value="Oyun" id="q4b">
+                <label for="q4b">Oyun</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q4" value="Kalkış" id="q4c">
+                <label for="q4c">Kalkış</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q4" value="Çıkış" id="q4d">
+                <label for="q4d">Çıkış</label>
+            </div>
+        </div>
+        <div class="question">
+            <h2>5. Mannschaft</h2>
+            <div class="answer">
+                <input type="radio" name="q5" value="Takım" id="q5a">
+                <label for="q5a">Takım</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q5" value="Köy" id="q5b">
+                <label for="q5b">Köy</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q5" value="Araç" id="q5c">
+                <label for="q5c">Araç</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="q5" value="Ev" id="q5d">
+                <label for="q5d">Ev</label>
+            </div>
+        </div>
+<div class="question">
+    <h2>6. Angst</h2>
+    <div class="answer">
+        <input type="radio" name="q6" value="Korku" id="q6a">
+        <label for="q6a">Korku</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q6" value="Neşe" id="q6b">
+        <label for="q6b">Neşe</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q6" value="Hüzün" id="q6c">
+        <label for="q6c">Hüzün</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q6" value="Şaşkınlık" id="q6d">
+        <label for="q6d">Şaşkınlık</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>7. fühle</h2>
+    <div class="answer">
+        <input type="radio" name="q7" value="Hissetmek" id="q7a">
+        <label for="q7a">Hissetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q7" value="Görmek" id="q7b">
+        <label for="q7b">Görmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q7" value="Duymak" id="q7c">
+        <label for="q7c">Duymak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q7" value="Tatmak" id="q7d">
+        <label for="q7d">Tatmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>8. übertrieben</h2>
+    <div class="answer">
+        <input type="radio" name="q8" value="Abartılı" id="q8a">
+        <label for="q8a">Abartılı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q8" value="Sade" id="q8b">
+        <label for="q8b">Sade</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q8" value="Gerçekçi" id="q8c">
+        <label for="q8c">Gerçekçi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q8" value="Doğal" id="q8d">
+        <label for="q8d">Doğal</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>9. zusätzlich</h2>
+    <div class="answer">
+        <input type="radio" name="q9" value="Ekstra" id="q9a">
+        <label for="q9a">Ekstra</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q9" value="Az" id="q9b">
+        <label for="q9b">Az</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q9" value="Önemli" id="q9c">
+        <label for="q9c">Önemli</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q9" value="İçsel" id="q9d">
+        <label for="q9d">İçsel</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>10. gelöscht</h2>
+    <div class="answer">
+        <input type="radio" name="q10" value="Silinmiş" id="q10a">
+        <label for="q10a">Silinmiş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q10" value="Kapanmış" id="q10b">
+        <label for="q10b">Kapanmış</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q10" value="Açık" id="q10c">
+        <label for="q10c">Açık</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q10" value="Kayıtlı" id="q10d">
+        <label for="q10d">Kayıtlı</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>11. Gesellschaft</h2>
+    <div class="answer">
+        <input type="radio" name="q11" value="Toplum" id="q11a">
+        <label for="q11a">Toplum</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q11" value="Dünya" id="q11b">
+        <label for="q11b">Dünya</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q11" value="Ev" id="q11c">
+        <label for="q11c">Ev</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q11" value="Gök" id="q11d">
+        <label for="q11d">Gök</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>12. Zukunft</h2>
+    <div class="answer">
+        <input type="radio" name="q12" value="Gelecek" id="q12a">
+        <label for="q12a">Gelecek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q12" value="Geçmiş" id="q12b">
+        <label for="q12b">Geçmiş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q12" value="Bugün" id="q12c">
+        <label for="q12c">Bugün</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q12" value="Dün" id="q12d">
+        <label for="q12d">Dün</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>13. bewerben</h2>
+    <div class="answer">
+        <input type="radio" name="q13" value="Başvurmak" id="q13a">
+        <label for="q13a">Başvurmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q13" value="Araştırmak" id="q13b">
+        <label for="q13b">Araştırmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q13" value="İşlemek" id="q13c">
+        <label for="q13c">İşlemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q13" value="Kazanmak" id="q13d">
+        <label for="q13d">Kazanmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>14. bestanden</h2>
+    <div class="answer">
+        <input type="radio" name="q14" value="Geçmiş" id="q14a">
+        <label for="q14a">Geçmiş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q14" value="Başarılı" id="q14b">
+        <label for="q14b">Başarılı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q14" value="Başarısız" id="q14c">
+        <label for="q14c">Başarısız</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q14" value="Geçersiz" id="q14d">
+        <label for="q14d">Geçersiz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>15. Abitur</h2>
+    <div class="answer">
+        <input type="radio" name="q15" value="Lise diploması" id="q15a">
+        <label for="q15a">Lise diploması</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q15" value="Üniversite diploması" id="q15b">
+        <label for="q15b">Üniversite diploması</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q15" value="İş sertifikası" id="q15c">
+        <label for="q15c">İş sertifikası</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q15" value="Sertifika" id="q15d">
+        <label for="q15d">Sertifika</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>16. wenigstens</h2>
+    <div class="answer">
+        <input type="radio" name="q16" value="En azından" id="q16a">
+        <label for="q16a">En azından</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q16" value="En çok" id="q16b">
+        <label for="q16b">En çok</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q16" value="En iyi" id="q16c">
+        <label for="q16c">En iyi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q16" value="En değerli" id="q16d">
+        <label for="q16d">En değerli</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>17. ausgeben</h2>
+    <div class="answer">
+        <input type="radio" name="q17" value="Harcamak" id="q17a">
+        <label for="q17a">Harcamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q17" value="Kazanmak" id="q17b">
+        <label for="q17b">Kazanmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q17" value="Yatırmak" id="q17c">
+        <label for="q17c">Yatırmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q17" value="Almak" id="q17d">
+        <label for="q17d">Almak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>18. Trauung</h2>
+    <div class="answer">
+        <input type="radio" name="q18" value="Düğün" id="q18a">
+        <label for="q18a">Düğün</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q18" value="Mevlit" id="q18b">
+        <label for="q18b">Mevlit</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q18" value="Açılış" id="q18c">
+        <label for="q18c">Açılış</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q18" value="Toplantı" id="q18d">
+        <label for="q18d">Toplantı</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>19. wach</h2>
+    <div class="answer">
+        <input type="radio" name="q19" value="Uyanık" id="q19a">
+        <label for="q19a">Uyanık</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q19" value="Uykulu" id="q19b">
+        <label for="q19b">Uykulu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q19" value="Yorgun" id="q19c">
+        <label for="q19c">Yorgun</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q19" value="Dinlenmiş" id="q19d">
+        <label for="q19d">Dinlenmiş</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>20. entscheiden</h2>
+    <div class="answer">
+        <input type="radio" name="q20" value="Karar vermek" id="q20a">
+        <label for="q20a">Karar vermek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q20" value="Görüş bildirmek" id="q20b">
+        <label for="q20b">Görüş bildirmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q20" value="Anlatmak" id="q20c">
+        <label for="q20c">Anlatmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q20" value="Dinlemek" id="q20d">
+        <label for="q20d">Dinlemek</label>
+    </div>
+</div>
+<div class="question">
+    <h2>21. Entscheidung</h2>
+    <div class="answer">
+        <input type="radio" name="q21" value="Karar" id="q21a">
+        <label for="q21a">Karar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q21" value="Görüş" id="q21b">
+        <label for="q21b">Görüş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q21" value="Fikir" id="q21c">
+        <label for="q21c">Fikir</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q21" value="Karışıklık" id="q21d">
+        <label for="q21d">Karışıklık</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>22. verbringen</h2>
+    <div class="answer">
+        <input type="radio" name="q22" value="Zaman geçirmek" id="q22a">
+        <label for="q22a">Zaman geçirmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q22" value="Harcamak" id="q22b">
+        <label for="q22b">Harcamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q22" value="Kazanmak" id="q22c">
+        <label for="q22c">Kazanmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q22" value="Kaybetmek" id="q22d">
+        <label for="q22d">Kaybetmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>23. Interesse</h2>
+    <div class="answer">
+        <input type="radio" name="q23" value="İlgi" id="q23a">
+        <label for="q23a">İlgi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q23" value="Nefret" id="q23b">
+        <label for="q23b">Nefret</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q23" value="Merak" id="q23c">
+        <label for="q23c">Merak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q23" value="Korku" id="q23d">
+        <label for="q23d">Korku</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>24. nutzen</h2>
+    <div class="answer">
+        <input type="radio" name="q24" value="Kullanmak" id="q24a">
+        <label for="q24a">Kullanmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q24" value="Tüketmek" id="q24b">
+        <label for="q24b">Tüketmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q24" value="Boşa harcamak" id="q24c">
+        <label for="q24c">Boşa harcamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q24" value="Biriktirmek" id="q24d">
+        <label for="q24d">Biriktirmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>25. Plattform</h2>
+    <div class="answer">
+        <input type="radio" name="q25" value="Platform" id="q25a">
+        <label for="q25a">Platform</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q25" value="Yüksek yer" id="q25b">
+        <label for="q25b">Yüksek yer</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q25" value="Düzlem" id="q25c">
+        <label for="q25c">Düzlem</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q25" value="Kat" id="q25d">
+        <label for="q25d">Kat</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>26. Meinung</h2>
+    <div class="answer">
+        <input type="radio" name="q26" value="Görüş" id="q26a">
+        <label for="q26a">Görüş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q26" value="Bilgi" id="q26b">
+        <label for="q26b">Bilgi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q26" value="Karar" id="q26c">
+        <label for="q26c">Karar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q26" value="Düşünce" id="q26d">
+        <label for="q26d">Düşünce</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>27. ausrichten</h2>
+    <div class="answer">
+        <input type="radio" name="q27" value="Yönlendirmek" id="q27a">
+        <label for="q27a">Yönlendirmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q27" value="Bozmak" id="q27b">
+        <label for="q27b">Bozmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q27" value="Düzenlemek" id="q27c">
+        <label for="q27c">Düzenlemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q27" value="Dağıtmak" id="q27d">
+        <label for="q27d">Dağıtmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>28. versuchen</h2>
+    <div class="answer">
+        <input type="radio" name="q28" value="Denemek" id="q28a">
+        <label for="q28a">Denemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q28" value="Vazgeçmek" id="q28b">
+        <label for="q28b">Vazgeçmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q28" value="Başarmak" id="q28c">
+        <label for="q28c">Başarmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q28" value="Kaybetmek" id="q28d">
+        <label for="q28d">Kaybetmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>29. beschäftigen</h2>
+    <div class="answer">
+        <input type="radio" name="q29" value="Meşgul etmek" id="q29a">
+        <label for="q29a">Meşgul etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q29" value="Boş bırakmak" id="q29b">
+        <label for="q29b">Boş bırakmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q29" value="İlgilenmemek" id="q29c">
+        <label for="q29c">İlgilenmemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q29" value="Unutmak" id="q29d">
+        <label for="q29d">Unutmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>30. behalten</h2>
+    <div class="answer">
+        <input type="radio" name="q30" value="Saklamak" id="q30a">
+        <label for="q30a">Saklamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q30" value="Vermek" id="q30b">
+        <label for="q30b">Vermek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q30" value="Kaybetmek" id="q30c">
+        <label for="q30c">Kaybetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q30" value="Unutmak" id="q30d">
+        <label for="q30d">Unutmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>31. erkennen</h2>
+    <div class="answer">
+        <input type="radio" name="q31" value="Tanımak" id="q31a">
+        <label for="q31a">Tanımak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q31" value="Unutmak" id="q31b">
+        <label for="q31b">Unutmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q31" value="Kaybetmek" id="q31c">
+        <label for="q31c">Kaybetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q31" value="Karıştırmak" id="q31d">
+        <label for="q31d">Karıştırmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>32. allmählich</h2>
+    <div class="answer">
+        <input type="radio" name="q32" value="Yavaş yavaş" id="q32a">
+        <label for="q32a">Yavaş yavaş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q32" value="Hızlıca" id="q32b">
+        <label for="q32b">Hızlıca</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q32" value="Aniden" id="q32c">
+        <label for="q32c">Aniden</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q32" value="Birden" id="q32d">
+        <label for="q32d">Birden</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>33. Maßnahme</h2>
+    <div class="answer">
+        <input type="radio" name="q33" value="Önlem" id="q33a">
+        <label for="q33a">Önlem</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q33" value="Tedbir" id="q33b">
+        <label for="q33b">Tedbir</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q33" value="Karar" id="q33c">
+        <label for="q33c">Karar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q33" value="Yöntem" id="q33d">
+        <label for="q33d">Yöntem</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>34. nennen</h2>
+    <div class="answer">
+        <input type="radio" name="q34" value="Adlandırmak" id="q34a">
+        <label for="q34a">Adlandırmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q34" value="Gizlemek" id="q34b">
+        <label for="q34b">Gizlemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q34" value="Saklamak" id="q34c">
+        <label for="q34c">Saklamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q34" value="Unutmak" id="q34d">
+        <label for="q34d">Unutmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>35. beliebt</h2>
+    <div class="answer">
+        <input type="radio" name="q35" value="Popüler" id="q35a">
+        <label for="q35a">Popüler</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q35" value="Sevilmeyen" id="q35b">
+        <label for="q35b">Sevilmeyen</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q35" value="Nefret edilen" id="q35c">
+        <label for="q35c">Nefret edilen</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q35" value="Bilinmeyen" id="q35d">
+        <label for="q35d">Bilinmeyen</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>36. Konto</h2>
+    <div class="answer">
+        <input type="radio" name="q36" value="Hesap" id="q36a">
+        <label for="q36a">Hesap</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q36" value="Bakiye" id="q36b">
+        <label for="q36b">Bakiye</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q36" value="Borç" id="q36c">
+        <label for="q36c">Borç</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q36" value="Yatırım" id="q36d">
+        <label for="q36d">Yatırım</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>37. Arbeitnehmer</h2>
+    <div class="answer">
+        <input type="radio" name="q37" value="Çalışan" id="q37a">
+        <label for="q37a">Çalışan</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q37" value="İşveren" id="q37b">
+        <label for="q37b">İşveren</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q37" value="Yönetici" id="q37c">
+        <label for="q37c">Yönetici</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q37" value="Müşteri" id="q37d">
+        <label for="q37d">Müşteri</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>38. Teilzeit</h2>
+    <div class="answer">
+        <input type="radio" name="q38" value="Yarı zamanlı" id="q38a">
+        <label for="q38a">Yarı zamanlı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q38" value="Tam zamanlı" id="q38b">
+        <label for="q38b">Tam zamanlı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q38" value="Geçici" id="q38c">
+        <label for="q38c">Geçici</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q38" value="Sürekli" id="q38d">
+        <label for="q38d">Sürekli</label>
+    </div>
+</div>
+<div class="question">
+    <h2>39. lernen</h2>
+    <div class="answer">
+        <input type="radio" name="q39" value="Öğrenmek" id="q39a">
+        <label for="q39a">Öğrenmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q39" value="Öğretmek" id="q39b">
+        <label for="q39b">Öğretmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q39" value="Unutmak" id="q39c">
+        <label for="q39c">Unutmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q39" value="Karıştırmak" id="q39d">
+        <label for="q39d">Karıştırmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>40. Weiterbildung</h2>
+    <div class="answer">
+        <input type="radio" name="q40" value="İleri Eğitim" id="q40a">
+        <label for="q40a">İleri Eğitim</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q40" value="Temel Eğitim" id="q40b">
+        <label for="q40b">Temel Eğitim</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q40" value="Mesleki Eğitim" id="q40c">
+        <label for="q40c">Mesleki Eğitim</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q40" value="Öğrenim" id="q40d">
+        <label for="q40d">Öğrenim</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>41. akzeptieren</h2>
+    <div class="answer">
+        <input type="radio" name="q41" value="Kabul etmek" id="q41a">
+        <label for="q41a">Kabul etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q41" value="Reddetmek" id="q41b">
+        <label for="q41b">Reddetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q41" value="Görmezden Gelmek" id="q41c">
+        <label for="q41c">Görmezden Gelmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q41" value="İhmal Etmek" id="q41d">
+        <label for="q41d">İhmal Etmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>42. gering</h2>
+    <div class="answer">
+        <input type="radio" name="q42" value="Az" id="q42a">
+        <label for="q42a">Az</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q42" value="Çok" id="q42b">
+        <label for="q42b">Çok</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q42" value="Orta" id="q42c">
+        <label for="q42c">Orta</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q42" value="Yetersiz" id="q42d">
+        <label for="q42d">Yetersiz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>43. lohn</h2>
+    <div class="answer">
+        <input type="radio" name="q43" value="Maaş" id="q43a">
+        <label for="q43a">Maaş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q43" value="Prim" id="q43b">
+        <label for="q43b">Prim</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q43" value="Bağış" id="q43c">
+        <label for="q43c">Bağış</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q43" value="Ücret" id="q43d">
+        <label for="q43d">Ücret</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>44. Betreuung</h2>
+    <div class="answer">
+        <input type="radio" name="q44" value="Bakım" id="q44a">
+        <label for="q44a">Bakım</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q44" value="Gözetim" id="q44b">
+        <label for="q44b">Gözetim</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q44" value="Destek" id="q44c">
+        <label for="q44c">Destek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q44" value="Eğitim" id="q44d">
+        <label for="q44d">Eğitim</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>45. Durchschnittlich</h2>
+    <div class="answer">
+        <input type="radio" name="q45" value="Ortalama" id="q45a">
+        <label for="q45a">Ortalama</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q45" value="Fazla" id="q45b">
+        <label for="q45b">Fazla</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q45" value="Az" id="q45c">
+        <label for="q45c">Az</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q45" value="Yetersiz" id="q45d">
+        <label for="q45d">Yetersiz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>46. Ahnung</h2>
+    <div class="answer">
+        <input type="radio" name="q46" value="Fikir" id="q46a">
+        <label for="q46a">Fikir</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q46" value="Bilgi" id="q46b">
+        <label for="q46b">Bilgi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q46" value="Düşünce" id="q46c">
+        <label for="q46c">Düşünce</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q46" value="Görüş" id="q46d">
+        <label for="q46d">Görüş</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>47. Nationalfeiertag</h2>
+    <div class="answer">
+        <input type="radio" name="q47" value="Milli Bayram" id="q47a">
+        <label for="q47a">Milli Bayram</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q47" value="Dini Bayram" id="q47b">
+        <label for="q47b">Dini Bayram</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q47" value="Tatili" id="q47c">
+        <label for="q47c">Tatili</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q47" value="Resmi Tatil" id="q47d">
+        <label for="q47d">Resmi Tatil</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>48. überstünde</h2>
+    <div class="answer">
+        <input type="radio" name="q48" value="Mesai" id="q48a">
+        <label for="q48a">Mesai</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q48" value="İşsizlik" id="q48b">
+        <label for="q48b">İşsizlik</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q48" value="Fazla Çalışma" id="q48c">
+        <label for="q48c">Fazla Çalışma</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q48" value="Az İş" id="q48d">
+        <label for="q48d">Az İş</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>49. bieten</h2>
+    <div class="answer">
+        <input type="radio" name="q49" value="Sunmak" id="q49a">
+        <label for="q49a">Sunmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q49" value="Almak" id="q49b">
+        <label for="q49b">Almak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q49" value="Vermek" id="q49c">
+        <label for="q49c">Vermek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q49" value="Götürmek" id="q49d">
+        <label for="q49d">Götürmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>50. Regel</h2>
+    <div class="answer">
+        <input type="radio" name="q50" value="Kural" id="q50a">
+        <label for="q50a">Kural</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q50" value="İstisna" id="q50b">
+        <label for="q50b">İstisna</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q50" value="Kaide" id="q50c">
+        <label for="q50c">Kaide</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q50" value="Yasa" id="q50d">
+        <label for="q50d">Yasa</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>51. Industrie</h2>
+    <div class="answer">
+        <input type="radio" name="q51" value="Sanayi" id="q51a">
+        <label for="q51a">Sanayi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q51" value="Tarım" id="q51b">
+        <label for="q51b">Tarım</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q51" value="Hizmet" id="q51c">
+        <label for="q51c">Hizmet</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q51" value="Ticaret" id="q51d">
+        <label for="q51d">Ticaret</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>52. vertrag</h2>
+    <div class="answer">
+        <input type="radio" name="q52" value="Sözleşme" id="q52a">
+        <label for="q52a">Sözleşme</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q52" value="Anlaşma" id="q52b">
+        <label for="q52b">Anlaşma</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q52" value="Karar" id="q52c">
+        <label for="q52c">Karar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q52" value="Yasa" id="q52d">
+        <label for="q52d">Yasa</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>53. durchschnitt</h2>
+    <div class="answer">
+        <input type="radio" name="q53" value="Ortalama" id="q53a">
+        <label for="q53a">Ortalama</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q53" value="Fazla" id="q53b">
+        <label for="q53b">Fazla</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q53" value="Az" id="q53c">
+        <label for="q53c">Az</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q53" value="Yetersiz" id="q53d">
+        <label for="q53d">Yetersiz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>54. dagegen</h2>
+    <div class="answer">
+        <input type="radio" name="q54" value="Karşı" id="q54a">
+        <label for="q54a">Karşı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q54" value="Lehinde" id="q54b">
+        <label for="q54b">Lehinde</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q54" value="Nötr" id="q54c">
+        <label for="q54c">Nötr</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q54" value="Yanında" id="q54d">
+        <label for="q54d">Yanında</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>55. angestellte</h2>
+    <div class="answer">
+        <input type="radio" name="q55" value="Çalışan" id="q55a">
+        <label for="q55a">Çalışan</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q55" value="İşveren" id="q55b">
+        <label for="q55b">İşveren</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q55" value="Müşteri" id="q55c">
+        <label for="q55c">Müşteri</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q55" value="Yönetici" id="q55d">
+        <label for="q55d">Yönetici</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>56. insgesamt</h2>
+    <div class="answer">
+        <input type="radio" name="q56" value="Toplamda" id="q56a">
+        <label for="q56a">Toplamda</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q56" value="Kısmen" id="q56b">
+        <label for="q56b">Kısmen</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q56" value="Az" id="q56c">
+        <label for="q56c">Az</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q56" value="Çoğunlukla" id="q56d">
+        <label for="q56d">Çoğunlukla</label>
+    </div>
+</div>
+<div class="question">
+    <h2>57. mindestens</h2>
+    <div class="answer">
+        <input type="radio" name="q57" value="En az" id="q57a">
+        <label for="q57a">En az</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q57" value="En çok" id="q57b">
+        <label for="q57b">En çok</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q57" value="Tam" id="q57c">
+        <label for="q57c">Tam</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q57" value="Yarım" id="q57d">
+        <label for="q57d">Yarım</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>58. verein</h2>
+    <div class="answer">
+        <input type="radio" name="q58" value="Dernek" id="q58a">
+        <label for="q58a">Dernek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q58" value="Şirket" id="q58b">
+        <label for="q58b">Şirket</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q58" value="Kurum" id="q58c">
+        <label for="q58c">Kurum</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q58" value="Vakfı" id="q58d">
+        <label for="q58d">Vakfı</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>59. versuch</h2>
+    <div class="answer">
+        <input type="radio" name="q59" value="Deneme" id="q59a">
+        <label for="q59a">Deneme</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q59" value="Başarı" id="q59b">
+        <label for="q59b">Başarı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q59" value="Kaybetme" id="q59c">
+        <label for="q59c">Kaybetme</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q59" value="Başarısızlık" id="q59d">
+        <label for="q59d">Başarısızlık</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>60. Meister</h2>
+    <div class="answer">
+        <input type="radio" name="q60" value="Usta" id="q60a">
+        <label for="q60a">Usta</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q60" value="Çırak" id="q60b">
+        <label for="q60b">Çırak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q60" value="Öğrenci" id="q60c">
+        <label for="q60c">Öğrenci</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q60" value="Öğretmen" id="q60d">
+        <label for="q60d">Öğretmen</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>61. Sportart</h2>
+    <div class="answer">
+        <input type="radio" name="q61" value="Spor Dalı" id="q61a">
+        <label for="q61a">Spor Dalı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q61" value="Spor Salonu" id="q61b">
+        <label for="q61b">Spor Salonu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q61" value="Spor Kıyafeti" id="q61c">
+        <label for="q61c">Spor Kıyafeti</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q61" value="Spor Aleti" id="q61d">
+        <label for="q61d">Spor Aleti</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>62. Entspannung</h2>
+    <div class="answer">
+        <input type="radio" name="q62" value="Rahatlama" id="q62a">
+        <label for="q62a">Rahatlama</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q62" value="Gerginlik" id="q62b">
+        <label for="q62b">Gerginlik</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q62" value="Dinlenme" id="q62c">
+        <label for="q62c">Dinlenme</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q62" value="Çalışma" id="q62d">
+        <label for="q62d">Çalışma</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>63. Ernährung</h2>
+    <div class="answer">
+        <input type="radio" name="q63" value="Beslenme" id="q63a">
+        <label for="q63a">Beslenme</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q63" value="Açlık" id="q63b">
+        <label for="q63b">Açlık</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q63" value="Diyet" id="q63c">
+        <label for="q63c">Diyet</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q63" value="Egzersiz" id="q63d">
+        <label for="q63d">Egzersiz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>64. Bewegung</h2>
+    <div class="answer">
+        <input type="radio" name="q64" value="Hareket" id="q64a">
+        <label for="q64a">Hareket</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q64" value="Durağanlık" id="q64b">
+        <label for="q64b">Durağanlık</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q64" value="Egzersiz" id="q64c">
+        <label for="q64c">Egzersiz</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q64" value="Dinlenme" id="q64d">
+        <label for="q64d">Dinlenme</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>65. ausruhen</h2>
+    <div class="answer">
+        <input type="radio" name="q65" value="Dinlenmek" id="q65a">
+        <label for="q65a">Dinlenmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q65" value="Çalışmak" id="q65b">
+        <label for="q65b">Çalışmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q65" value="Hareket etmek" id="q65c">
+        <label for="q65c">Hareket etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q65" value="Egzersiz yapmak" id="q65d">
+        <label for="q65d">Egzersiz yapmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>66. ernähren</h2>
+    <div class="answer">
+        <input type="radio" name="q66" value="Beslemek" id="q66a">
+        <label for="q66a">Beslemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q66" value="Aç bırakmak" id="q66b">
+        <label for="q66b">Aç bırakmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q66" value="Diyet yapmak" id="q66c">
+        <label for="q66c">Diyet yapmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q66" value="Egzersiz yapmak" id="q66d">
+        <label for="q66d">Egzersiz yapmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>67. ärgern</h2>
+    <div class="answer">
+        <input type="radio" name="q67" value="Kızdırmak" id="q67a">
+        <label for="q67a">Kızdırmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q67" value="Sevindirmek" id="q67b">
+        <label for="q67b">Sevindirmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q67" value="Üzmek" id="q67c">
+        <label for="q67c">Üzmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q67" value="Korkutmak" id="q67d">
+        <label for="q67d">Korkutmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>68. rasieren</h2>
+    <div class="answer">
+        <input type="radio" name="q68" value="Tıraş olmak" id="q68a">
+        <label for="q68a">Tıraş olmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q68" value="Saç kesmek" id="q68b">
+        <label for="q68b">Saç kesmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q68" value="Saç boyamak" id="q68c">
+        <label for="q68c">Saç boyamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q68" value="Tırnak kesmek" id="q68d">
+        <label for="q68d">Tırnak kesmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>69. schminken</h2>
+    <div class="answer">
+        <input type="radio" name="q69" value="Makyaj yapmak" id="q69a">
+        <label for="q69a">Makyaj yapmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q69" value="Süslenmek" id="q69b">
+        <label for="q69b">Süslenmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q69" value="Saç yapmak" id="q69c">
+        <label for="q69c">Saç yapmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q69" value="Tırnak boyamak" id="q69d">
+        <label for="q69d">Tırnak boyamak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>70. umziehen</h2>
+    <div class="answer">
+        <input type="radio" name="q70" value="Taşınmak" id="q70a">
+        <label for="q70a">Taşınmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q70" value="Seyahat etmek" id="q70b">
+        <label for="q70b">Seyahat etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q70" value="Gezmek" id="q70c">
+        <label for="q70c">Gezmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q70" value="Koşmak" id="q70d">
+        <label for="q70d">Koşmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>71. kämmen</h2>
+    <div class="answer">
+        <input type="radio" name="q71" value="Saç taramak" id="q71a">
+        <label for="q71a">Saç taramak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q71" value="Saç kesmek" id="q71b">
+        <label for="q71b">Saç kesmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q71" value="Saç boyamak" id="q71c">
+        <label for="q71c">Saç boyamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q71" value="Saç yıkamak" id="q71d">
+        <label for="q71d">Saç yıkamak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>72. beeilen</h2>
+    <div class="answer">
+        <input type="radio" name="q72" value="Acele etmek" id="q72a">
+        <label for="q72a">Acele etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q72" value="Yavaşlamak" id="q72b">
+        <label for="q72b">Yavaşlamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q72" value="Beklemek" id="q72c">
+        <label for="q72c">Beklemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q72" value="Durmak" id="q72d">
+        <label for="q72d">Durmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>73. beschweren</h2>
+    <div class="answer">
+        <input type="radio" name="q73" value="Şikayet etmek" id="q73a">
+        <label for="q73a">Şikayet etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q73" value="Teşekkür etmek" id="q73b">
+        <label for="q73b">Teşekkür etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q73" value="Üzülmek" id="q73c">
+        <label for="q73c">Üzülmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q73" value="Sevinmek" id="q73d">
+        <label for="q73d">Sevinmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>74. überhaupt</h2>
+    <div class="answer">
+        <input type="radio" name="q74" value="Genel olarak" id="q74a">
+        <label for="q74a">Genel olarak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q74" value="Özellikle" id="q74b">
+        <label for="q74b">Özellikle</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q74" value="Hiç" id="q74c">
+        <label for="q74c">Hiç</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q74" value="Asla" id="q74d">
+        <label for="q74d">Asla</label>
+    </div>
+</div>
+<div class="question">
+    <h2>76. Geschichte</h2>
+    <div class="answer">
+        <input type="radio" name="q76" value="Tarih" id="q76a">
+        <label for="q76a">Tarih</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q76" value="Hikaye" id="q76b">
+        <label for="q76b">Hikaye</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q76" value="Masal" id="q76c">
+        <label for="q76c">Masal</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q76" value="Efsane" id="q76d">
+        <label for="q76d">Efsane</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>77. Nachrichten</h2>
+    <div class="answer">
+        <input type="radio" name="q77" value="Haberler" id="q77a">
+        <label for="q77a">Haberler</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q77" value="Mektuplar" id="q77b">
+        <label for="q77b">Mektuplar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q77" value="Mesajlar" id="q77c">
+        <label for="q77c">Mesajlar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q77" value="Duyurular" id="q77d">
+        <label for="q77d">Duyurular</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>78. Weltmeisterschaft</h2>
+    <div class="answer">
+        <input type="radio" name="q78" value="Dünya Kupası" id="q78a">
+        <label for="q78a">Dünya Kupası</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q78" value="Avrupa Şampiyonası" id="q78b">
+        <label for="q78b">Avrupa Şampiyonası</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q78" value="Ulusal Şampiyona" id="q78c">
+        <label for="q78c">Ulusal Şampiyona</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q78" value="Bölgesel Şampiyona" id="q78d">
+        <label for="q78d">Bölgesel Şampiyona</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>79. Wettervorhersage</h2>
+    <div class="answer">
+        <input type="radio" name="q79" value="Hava Durumu Tahmini" id="q79a">
+        <label for="q79a">Hava Durumu Tahmini</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q79" value="Deprem Tahmini" id="q79b">
+        <label for "q79b">Deprem Tahmini</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q79" value="Sel Tahmini" id="q79c">
+        <label for="q79c">Sel Tahmini</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q79" value="Fırtına Tahmini" id="q79d">
+        <label for="q79d">Fırtına Tahmini</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>80. Besuch</h2>
+    <div class="answer">
+        <input type="radio" name="q80" value="Ziyaret" id="q80a">
+        <label for="q80a">Ziyaret</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q80" value="Misafirlik" id="q80b">
+        <label for="q80b">Misafirlik</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q80" value="Randevu" id="q80c">
+        <label for="q80c">Randevu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q80" value="Toplantı" id="q80d">
+        <label for="q80d">Toplantı</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>81. ehrlich</h2>
+    <div class="answer">
+        <input type="radio" name="q81" value="Dürüst" id="q81a">
+        <label for="q81a">Dürüst</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q81" value="Yalancı" id="q81b">
+        <label for="q81b">Yalancı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q81" value="Güvenilir" id="q81c">
+        <label for="q81c">Güvenilir</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q81" value="Temiz" id="q81d">
+        <label for="q81d">Temiz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>82. Ferien</h2>
+    <div class="answer">
+        <input type="radio" name="q82" value="Tatil" id="q82a">
+        <label for="q82a">Tatil</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q82" value="Çalışma" id="q82b">
+        <label for="q82b">Çalışma</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q82" value="Okul" id="q82c">
+        <label for="q82c">Okul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q82" value="Etkinlik" id="q82d">
+        <label for="q82d">Etkinlik</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>83. Beitrag</h2>
+    <div class="answer">
+        <input type="radio" name="q83" value="Katkı" id="q83a">
+        <label for="q83a">Katkı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q83" value="Yardım" id="q83b">
+        <label for="q83b">Yardım</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q83" value="Bağış" id="q83c">
+        <label for="q83c">Bağış</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q83" value="Destek" id="q83d">
+        <label for="q83d">Destek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>84. betragen</h2>
+    <div class="answer">
+        <input type="radio" name="q84" value="Miktar" id="q84a">
+        <label for="q84a">Miktar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q84" value="Ödeme" id="q84b">
+        <label for="q84b">Ödeme</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q84" value="Tutar" id="q84c">
+        <label for="q84c">Tutar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q84" value="Toplam" id="q84d">
+        <label for="q84d">Toplam</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>85. geschehen</h2>
+    <div class="answer">
+        <input type="radio" name="q85" value="Gerçekleşmek" id="q85a">
+        <label for="q85a">Gerçekleşmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q85" value="Olmak" id="q85b">
+        <label for="q85b">Olmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q85" value="Başlamak" id="q85c">
+        <label for="q85c">Başlamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q85" value="Bitmek" id="q85d">
+        <label for="q85d">Bitmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>86. Ehepartner</h2>
+    <div class="answer">
+        <input type="radio" name="q86" value="Eş" id="q86a">
+        <label for="q86a">Eş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q86" value="Arkadaş" id="q86b">
+        <label for="q86b">Arkadaş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q86" value="Dost" id="q86c">
+        <label for="q86c">Dost</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q86" value="Aile" id="q86d">
+        <label for="q86d">Aile</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>87. halle</h2>
+    <div class="answer">
+        <input type="radio" name="q87" value="Salon" id="q87a">
+        <label for="q87a">Salon</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q87" value="Bina" id="q87b">
+        <label for="q87b">Bina</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q87" value="Oda" id="q87c">
+        <label for="q87c">Oda</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q87" value="Mekan" id="q87d">
+        <label for="q87d">Mekan</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>88. Apparat</h2>
+    <div class="answer">
+        <input type="radio" name="q88" value="Cihaz" id="q88a">
+        <label for="q88a">Cihaz</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q88" value="Makine" id="q88b">
+        <label for="q88b">Makine</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q88" value="Araç" id="q88c">
+        <label for="q88c">Araç</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q88" value="Alet" id="q88d">
+        <label for="q88d">Alet</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>89. angehörige</h2>
+    <div class="answer">
+        <input type="radio" name="q89" value="Yakınlar" id="q89a">
+        <label for="q89a">Yakınlar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q89" value="Akrabalar" id="q89b">
+        <label for="q89b">Akrabalar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q89" value="Arkadaşlar" id="q89c">
+        <label for="q89c">Arkadaşlar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q89" value="Tanıdıklar" id="q89d">
+        <label for="q89d">Tanıdıklar</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>90. Azubi</h2>
+    <div class="answer">
+        <input type="radio" name="q90" value="Çırak" id="q90a">
+        <label for="q90a">Çırak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q90" value="Usta" id="q90b">
+        <label for="q90b">Usta</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q90" value="Öğrenci" id="q90c">
+        <label for="q90c">Öğrenci</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q90" value="Öğretmen" id="q90d">
+        <label for="q90d">Öğretmen</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>91. halten</h2>
+    <div class="answer">
+        <input type="radio" name="q91" value="Tutmak" id="q91a">
+        <label for="q91a">Tutmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q91" value="Bırakmak" id="q91b">
+        <label for="q91b">Bırakmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q91" value="Taşımak" id="q91c">
+        <label for="q91c">Taşımak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q91" value="Saklamak" id="q91d">
+        <label for="q91d">Saklamak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>92. häufig</h2>
+    <div class="answer">
+        <input type="radio" name="q92" value="Sık sık" id="q92a">
+        <label for="q92a">Sık sık</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q92" value="Nadiren" id="q92b">
+        <label for="q92b">Nadiren</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q92" value="Bazen" id="q92c">
+        <label for="q92c">Bazen</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q92" value="Hiç" id="q92d">
+        <label for="q92d">Hiç</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>93. Ursache</h2>
+    <div class="answer">
+        <input type="radio" name="q93" value="Sebep" id="q93a">
+        <label for="q93a">Sebep</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q93" value="Sonuç" id="q93b">
+        <label for="q93b">Sonuç</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q93" value="Durum" id="q93c">
+        <label for="q93c">Durum</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q93" value="Olay" id="q93d">
+        <label for="q93d">Olay</label>
+    </div>
+</div>
+<div class="question">
+    <h2>95. Krankheit</h2>
+    <div class="answer">
+        <input type="radio" name="q95" value="Hastalık" id="q95a">
+        <label for="q95a">Hastalık</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q95" value="Sağlık" id="q95b">
+        <label for="q95b">Sağlık</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q95" value="İyileşme" id="q95c">
+        <label for="q95c">İyileşme</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q95" value="Rahatsızlık" id="q95d">
+        <label for="q95d">Rahatsızlık</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>96. Bildschirm</h2>
+    <div class="answer">
+        <input type="radio" name="q96" value="Ekran" id="q96a">
+        <label for="q96a">Ekran</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q96" value="Klavye" id="q96b">
+        <label for="q96b">Klavye</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q96" value="Fare" id="q96c">
+        <label for="q96c">Fare</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q96" value="Hoparlör" id="q96d">
+        <label for="q96d">Hoparlör</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>97. Körper</h2>
+    <div class="answer">
+        <input type="radio" name="q97" value="Vücut" id="q97a">
+        <label for="q97a">Vücut</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q97" value="Zihin" id="q97b">
+        <label for="q97b">Zihin</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q97" value="Ruh" id="q97c">
+        <label for="q97c">Ruh</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q97" value="Kalp" id="q97d">
+        <label for="q97d">Kalp</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>98. Treppe</h2>
+    <div class="answer">
+        <input type="radio" name="q98" value="Merdiven" id="q98a">
+        <label for="q98a">Merdiven</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q98" value="Asansör" id="q98b">
+        <label for="q98b">Asansör</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q98" value="Yol" id="q98c">
+        <label for="q98c">Yol</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q98" value="Kapı" id="q98d">
+        <label for="q98d">Kapı</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>99. Luft</h2>
+    <div class="answer">
+        <input type="radio" name="q99" value="Hava" id="q99a">
+        <label for="q99a">Hava</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q99" value="Su" id="q99b">
+        <label for="q99b">Su</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q99" value="Toprak" id="q99c">
+        <label for="q99c">Toprak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q99" value="Ateş" id="q99d">
+        <label for="q99d">Ateş</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>100. Untersuchung</h2>
+    <div class="answer">
+        <input type="radio" name="q100" value="Araştırma" id="q100a">
+        <label for="q100a">Araştırma</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q100" value="Deney" id="q100b">
+        <label for="q100b">Deney</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q100" value="Muayene" id="q100c">
+        <label for="q100c">Muayene</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q100" value="Gözlem" id="q100d">
+        <label for="q100d">Gözlem</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>101. schaffen</h2>
+    <div class="answer">
+        <input type="radio" name="q101" value="Başarmak" id="q101a">
+        <label for="q101a">Başarmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q101" value="Çalışmak" id="q101b">
+        <label for="q101b">Çalışmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q101" value="Yapmak" id="q101c">
+        <label for="q101c">Yapmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q101" value="Denemek" id="q101d">
+        <label for="q101d">Denemek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>102. preiswert</h2>
+    <div class="answer">
+        <input type="radio" name="q102" value="Ucuz" id="q102a">
+        <label for="q102a">Ucuz</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q102" value="Pahalı" id="q102b">
+        <label for="q102b">Pahalı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q102" value="Orta" id="q102c">
+        <label for="q102c">Orta</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q102" value="Değersiz" id="q102d">
+        <label for="q102d">Değersiz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>103. Spielplatz</h2>
+    <div class="answer">
+        <input type="radio" name="q103" value="Oyun Alanı" id="q103a">
+        <label for="q103a">Oyun Alanı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q103" value="Park" id="q103b">
+        <label for="q103b">Park</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q103" value="Bahçe" id="q103c">
+        <label for="q103c">Bahçe</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q103" value="Saha" id="q103d">
+        <label for="q103d">Saha</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>104. Krankenkasse</h2>
+    <div class="answer">
+        <input type="radio" name="q104" value="Sağlık Sigortası" id="q104a">
+        <label for="q104a">Sağlık Sigortası</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q104" value="Emeklilik Sigortası" id="q104b">
+        <label for="q104b">Emeklilik Sigortası</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q104" value="İşsizlik Sigortası" id="q104c">
+        <label for="q104c">İşsizlik Sigortası</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q104" value="Kaza Sigortası" id="q104d">
+        <label for="q104d">Kaza Sigortası</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>105. Strecke</h2>
+    <div class="answer">
+        <input type="radio" name="q105" value="Mesafe" id="q105a">
+        <label for="q105a">Mesafe</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q105" value="Yol" id="q105b">
+        <label for="q105b">Yol</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q105" value="Parkur" id="q105c">
+        <label for="q105c">Parkur</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q105" value="Alan" id="q105d">
+        <label for="q105d">Alan</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>106. klar</h2>
+    <div class="answer">
+        <input type="radio" name="q106" value="Açık" id="q106a">
+        <label for="q106a">Açık</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q106" value="Kapalı" id="q106b">
+        <label for="q106b">Kapalı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q106" value="Net" id="q106c">
+        <label for="q106c">Net</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q106" value="Bulanık" id="q106d">
+        <label for="q106d">Bulanık</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>107. selbstverständlich</h2>
+    <div class="answer">
+        <input type="radio" name="q107" value="Tabii ki" id="q107a">
+        <label for="q107a">Tabii ki</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q107" value="Şüphesiz" id="q107b">
+        <label for="q107b">Şüphesiz</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q107" value="Elbette" id="q107c">
+        <label for="q107c">Elbette</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q107" value="Kesinlikle" id="q107d">
+        <label for="q107d">Kesinlikle</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>108. Fach</h2>
+    <div class="answer">
+        <input type="radio" name="q108" value="Branş" id="q108a">
+        <label for="q108a">Branş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q108" value="Bölüm" id="q108b">
+        <label for="q108b">Bölüm</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q108" value="Dal" id="q108c">
+        <label for="q108c">Dal</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q108" value="Konu" id="q108d">
+        <label for="q108d">Konu</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>109. Gymnasium</h2>
+    <div class="answer">
+        <input type="radio" name="q109" value="Lise" id="q109a">
+        <label for="q109a">Lise</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q109" value="Ortaokul" id="q109b">
+        <label for="q109b">Ortaokul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q109" value="Üniversite" id="q109c">
+        <label for="q109c">Üniversite</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q109" value="İlkokul" id="q109d">
+        <label for="q109d">İlkokul</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>110. Referat</h2>
+    <div class="answer">
+        <input type="radio" name="q110" value="Sunum" id="q110a">
+        <label for="q110a">Sunum</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q110" value="Rapor" id="q110b">
+        <label for="q110b">Rapor</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q110" value="Ödev" id="q110c">
+        <label for="q110c">Ödev</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q110" value="Makale" id="q110d">
+        <label for="q110d">Makale</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>111. Abschluss</h2>
+    <div class="answer">
+        <input type="radio" name="q111" value="Mezuniyet" id="q111a">
+        <label for="q111a">Mezuniyet</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q111" value="Sınav" id="q111b">
+        <label for="q111b">Sınav</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q111" value="Ders" id="q111c">
+        <label for="q111c">Ders</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q111" value="Kurs" id="q111d">
+        <label for="q111d">Kurs</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>112. Prüfung</h2>
+    <div class="answer">
+        <input type="radio" name="q112" value="Sınav" id="q112a">
+        <label for="q112a">Sınav</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q112" value="Test" id="q112b">
+        <label for="q112b">Test</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q112" value="Değerlendirme" id="q112c">
+        <label for="q112c">Değerlendirme</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q112" value="Yazılı" id="q112d">
+        <label for="q112d">Yazılı</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>114. fleißig</h2>
+    <div class="answer">
+        <input type="radio" name="q114" value="Çalışkan" id="q114a">
+        <label for="q114a">Çalışkan</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q114" value="Tembel" id="q114b">
+        <label for="q114b">Tembel</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q114" value="Titiz" id="q114c">
+        <label for="q114c">Titiz</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q114" value="Dikkatsiz" id="q114d">
+        <label for="q114d">Dikkatsiz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>115. intelligent</h2>
+    <div class="answer">
+        <input type="radio" name="q115" value="Zeki" id="q115a">
+        <label for="q115a">Zeki</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q115" value="Aptal" id="q115b">
+        <label for="q115b">Aptal</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q115" value="Bilgili" id="q115c">
+        <label for="q115c">Bilgili</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q115" value="Cahil" id="q115d">
+        <label for="q115d">Cahil</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>116. dumm</h2>
+    <div class="answer">
+        <input type="radio" name="q116" value="Aptal" id="q116a">
+        <label for="q116a">Aptal</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q116" value="Zeki" id="q116b">
+        <label for="q116b">Zeki</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q116" value="Bilgili" id="q116c">
+        <label for="q116c">Bilgili</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q116" value="Cahil" id="q116d">
+        <label for="q116d">Cahil</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>117. schrecklich</h2>
+    <div class="answer">
+        <input type="radio" name="q117" value="Korkunç" id="q117a">
+        <label for="q117a">Korkunç</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q117" value="Harika" id="q117b">
+        <label for="q117b">Harika</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q117" value="Güzel" id="q117c">
+        <label for="q117c">Güzel</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q117" value="İyi" id="q117d">
+        <label for="q117d">İyi</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>118. streiten</h2>
+    <div class="answer">
+        <input type="radio" name="q118" value="Kavga etmek" id="q118a">
+        <label for="q118a">Kavga etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q118" value="Barışmak" id="q118b">
+        <label for="q118b">Barışmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q118" value="Tartışmak" id="q118c">
+        <label for="q118c">Tartışmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q118" value="Anlaşmak" id="q118d">
+        <label for="q118d">Anlaşmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>119. verbessern</h2>
+    <div class="answer">
+        <input type="radio" name="q119" value="Geliştirmek" id="q119a">
+        <label for="q119a">Geliştirmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q119" value="Kötüleştirmek" id="q119b">
+        <label for="q119b">Kötüleştirmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q119" value="Değiştirmek" id="q119c">
+        <label for="q119c">Değiştirmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q119" value="Düzeltmek" id="q119d">
+        <label for="q119d">Düzeltmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>120. verhalten</h2>
+    <div class="answer">
+        <input type="radio" name="q120" value="Davranış" id="q120a">
+        <label for="q120a">Davranış</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q120" value="Tutum" id="q120b">
+        <label for="q120b">Tutum</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q120" value="Hareket" id="q120c">
+        <label for="q120c">Hareket</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q120" value="Tepki" id="q120d">
+        <label for="q120d">Tepki</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>121. streng</h2>
+    <div class="answer">
+        <input type="radio" name="q121" value="Sert" id="q121a">
+        <label for="q121a">Sert</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q121" value="Yumuşak" id="q121b">
+        <label for="q121b">Yumuşak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q121" value="Kararlı" id="q121c">
+        <label for="q121c">Kararlı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q121" value="Gevşek" id="q121d">
+        <label for="q121d">Gevşek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>122. Wunsch</h2>
+    <div class="answer">
+        <input type="radio" name="q122" value="Dilek" id="q122a">
+        <label for="q122a">Dilek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q122" value="İstek" id="q122b">
+        <label for="q122b">İstek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q122" value="Arzu" id="q122c">
+        <label for="q122c">Arzu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q122" value="Rica" id="q122d">
+        <label for="q122d">Rica</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>123. Friseur</h2>
+    <div class="answer">
+        <input type="radio" name="q123" value="Berber" id="q123a">
+        <label for="q123a">Berber</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q123" value="Kuyumcu" id="q123b">
+        <label for="q123b">Kuyumcu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q123" value="Manav" id="q123c">
+        <label for="q123c">Manav</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q123" value="Kasap" id="q123d">
+        <label for="q123d">Kasap</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>124. jugendliche</h2>
+    <div class="answer">
+        <input type="radio" name="q124" value="Genç" id="q124a">
+        <label for="q124a">Genç</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q124" value="Yaşlı" id="q124b">
+        <label for="q124b">Yaşlı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q124" value="Çocuk" id="q124c">
+        <label for="q124c">Çocuk</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q124" value="Bebek" id="q124d">
+        <label for="q124d">Bebek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>125. Schauspieler</h2>
+    <div class="answer">
+        <input type="radio" name="q125" value="Oyuncu" id="q125a">
+        <label for="q125a">Oyuncu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q125" value="Yönetmen" id="q125b">
+        <label for="q125b">Yönetmen</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q125" value="Yazar" id="q125c">
+        <label for="q125c">Yazar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q125" value="Senarist" id="q125d">
+        <label for="q125d">Senarist</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>126. dass</h2>
+    <div class="answer">
+        <input type="radio" name="q126" value="Ki" id="q126a">
+        <label for="q126a">Ki</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q126" value="Ve" id="q126b">
+        <label for="q126b">Ve</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q126" value="Ama" id="q126c">
+        <label for="q126c">Ama</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q126" value="Çünkü" id="q126d">
+        <label for="q126d">Çünkü</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>127. vorhin</h2>
+    <div class="answer">
+        <input type="radio" name="q127" value="Az önce" id="q127a">
+        <label for="q127a">Az önce</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q127" value="Biraz sonra" id="q127b">
+        <label for="q127b">Biraz sonra</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q127" value="Dün" id="q127c">
+        <label for="q127c">Dün</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q127" value="Yarın" id="q127d">
+        <label for="q127d">Yarın</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>128. mittler</h2>
+    <div class="answer">
+        <input type="radio" name="q128" value="Orta" id="q128a">
+        <label for="q128a">Orta</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q128" value="Büyük" id="q128b">
+        <label for="q128b">Büyük</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q128" value="Küçük" id="q128c">
+        <label for="q128c">Küçük</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q128" value="Genç" id="q128d">
+        <label for="q128d">Genç</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>129. junge</h2>
+    <div class="answer">
+        <input type="radio" name="q129" value="Genç" id="q129a">
+        <label for="q129a">Genç</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q129" value="Yaşlı" id="q129b">
+        <label for="q129b">Yaşlı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q129" value="Çocuk" id="q129c">
+        <label for="q129c">Çocuk</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q129" value="Bebek" id="q129d">
+        <label for="q129d">Bebek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>130. Hochschule</h2>
+    <div class="answer">
+        <input type="radio" name="q130" value="Üniversite" id="q130a">
+        <label for="q130a">Üniversite</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q130" value="Lise" id="q130b">
+        <label for="q130b">Lise</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q130" value="Ortaokul" id="q130c">
+        <label for="q130c">Ortaokul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q130" value="İlkokul" id="q130d">
+        <label for="q130d">İlkokul</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>131. Gesamtschule</h2>
+    <div class="answer">
+        <input type="radio" name="q131" value="Ortaokul" id="q131a">
+        <label for="q131a">Ortaokul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q131" value="Lise" id="q131b">
+        <label for="q131b">Lise</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q131" value="Üniversite" id="q131c">
+        <label for="q131c">Üniversite</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q131" value="İlkokul" id="q131d">
+        <label for="q131d">İlkokul</label>
+    </div>
+</div>
+<div class="question">
+    <h2>133. Hauptschule</h2>
+    <div class="answer">
+        <input type="radio" name="q133" value="Ortaokul" id="q133a">
+        <label for="q133a">Ortaokul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q133" value="Lise" id="q133b">
+        <label for="q133b">Lise</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q133" value="Üniversite" id="q133c">
+        <label for="q133c">Üniversite</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q133" value="İlkokul" id="q133d">
+        <label for="q133d">İlkokul</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>134. Berufsschule</h2>
+    <div class="answer">
+        <input type="radio" name="q134" value="Meslek Okulu" id="q134a">
+        <label for="q134a">Meslek Okulu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q134" value="Lise" id="q134b">
+        <label for="q134b">Lise</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q134" value="Üniversite" id="q134c">
+        <label for="q134c">Üniversite</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q134" value="İlkokul" id="q134d">
+        <label for="q134d">İlkokul</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>135. freiwillig</h2>
+    <div class="answer">
+        <input type="radio" name="q135" value="Gönüllü" id="q135a">
+        <label for="q135a">Gönüllü</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q135" value="Zorunlu" id="q135b">
+        <label for="q135b">Zorunlu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q135" value="İstemli" id="q135c">
+        <label for="q135c">İstemli</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q135" value="Mecburi" id="q135d">
+        <label for="q135d">Mecburi</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>136. krippe</h2>
+    <div class="answer">
+        <input type="radio" name="q136" value="Kreş" id="q136a">
+        <label for="q136a">Kreş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q136" value="Anaokulu" id="q136b">
+        <label for="q136b">Anaokulu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q136" value="İlkokul" id="q136c">
+        <label for="q136c">İlkokul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q136" value="Ortaokul" id="q136d">
+        <label for="q136d">Ortaokul</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>137. Grundschule</h2>
+    <div class="answer">
+        <input type="radio" name="q137" value="İlkokul" id="q137a">
+        <label for="q137a">İlkokul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q137" value="Ortaokul" id="q137b">
+        <label for="q137b">Ortaokul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q137" value="Lise" id="q137c">
+        <label for="q137c">Lise</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q137" value="Üniversite" id="q137d">
+        <label for="q137d">Üniversite</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>138. Kunst</h2>
+    <div class="answer">
+        <input type="radio" name="q138" value="Sanat" id="q138a">
+        <label for="q138a">Sanat</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q138" value="Bilim" id="q138b">
+        <label for="q138b">Bilim</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q138" value="Edebiyat" id="q138c">
+        <label for="q138c">Edebiyat</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q138" value="Spor" id="q138d">
+        <label for="q138d">Spor</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>139. Geschichte</h2>
+    <div class="answer">
+        <input type="radio" name="q139" value="Tarih" id="q139a">
+        <label for="q139a">Tarih</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q139" value="Hikaye" id="q139b">
+        <label for="q139b">Hikaye</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q139" value="Masal" id="q139c">
+        <label for="q139c">Masal</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q139" value="Efsane" id="q139d">
+        <label for="q139d">Efsane</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>140. Sozialkunde</h2>
+    <div class="answer">
+        <input type="radio" name="q140" value="Sosyal Bilgiler" id="q140a">
+        <label for="q140a">Sosyal Bilgiler</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q140" value="Fen Bilgisi" id="q140b">
+        <label for="q140b">Fen Bilgisi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q140" value="Matematik" id="q140c">
+        <label for="q140c">Matematik</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q140" value="Edebiyat" id="q140d">
+        <label for="q140d">Edebiyat</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>141. hassen</h2>
+    <div class="answer">
+        <input type="radio" name="q141" value="Nefret etmek" id="q141a">
+        <label for="q141a">Nefret etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q141" value="Sevmek" id="q141b">
+        <label for="q141b">Sevmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q141" value="Beğenmek" id="q141c">
+        <label for="q141c">Beğenmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q141" value="Hoşlanmak" id="q141d">
+        <label for="q141d">Hoşlanmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>142. echt</h2>
+    <div class="answer">
+        <input type="radio" name="q142" value="Gerçek" id="q142a">
+        <label for="q142a">Gerçek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q142" value="Sahte" id="q142b">
+        <label for="q142b">Sahte</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q142" value="Doğru" id="q142c">
+        <label for="q142c">Doğru</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q142" value="Yanlış" id="q142d">
+        <label for="q142d">Yanlış</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>143. Leistung</h2>
+    <div class="answer">
+        <input type="radio" name="q143" value="Performans" id="q143a">
+        <label for="q143a">Performans</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q143" value="Başarı" id="q143b">
+        <label for="q143b">Başarı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q143" value="Verim" id="q143c">
+        <label for="q143c">Verim</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q143" value="Kapasite" id="q143d">
+        <label for="q143d">Kapasite</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>144. stimme</h2>
+    <div class="answer">
+        <input type="radio" name="q144" value="Ses" id="q144a">
+        <label for="q144a">Ses</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q144" value="Oy" id="q144b">
+        <label for="q144b">Oy</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q144" value="Müzik" id="q144c">
+        <label for="q144c">Müzik</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q144" value="Konuşma" id="q144d">
+        <label for="q144d">Konuşma</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>145. notwendig</h2>
+    <div class="answer">
+        <input type="radio" name="q145" value="Gerekli" id="q145a">
+        <label for="q145a">Gerekli</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q145" value="Gereksiz" id="q145b">
+        <label for="q145b">Gereksiz</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q145" value="Zorunlu" id="q145c">
+        <label for="q145c">Zorunlu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q145" value="İhtiyaç" id="q145d">
+        <label for="q145d">İhtiyaç</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>146. auftritt</h2>
+    <div class="answer">
+        <input type="radio" name="q146" value="Performans" id="q146a">
+        <label for="q146a">Performans</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q146" value="Gösteri" id="q146b">
+        <label for="q146b">Gösteri</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q146" value="Sahne" id="q146c">
+        <label for="q146c">Sahne</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q146" value="Etkinlik" id="q146d">
+        <label for="q146d">Etkinlik</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>147. speichern</h2>
+    <div class="answer">
+        <input type="radio" name="q147" value="Kaydetmek" id="q147a">
+        <label for="q147a">Kaydetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q147" value="Silmek" id="q147b">
+        <label for="q147b">Silmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q147" value="Güncellemek" id="q147c">
+        <label for="q147c">Güncellemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q147" value="Paylaşmak" id="q147d">
+        <label for="q147d">Paylaşmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>148. löschen</h2>
+    <div class="answer">
+        <input type="radio" name="q148" value="Silmek" id="q148a">
+        <label for="q148a">Silmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q148" value="Kaydetmek" id="q148b">
+        <label for="q148b">Kaydetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q148" value="Güncellemek" id="q148c">
+        <label for="q148c">Güncellemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q148" value="Paylaşmak" id="q148d">
+        <label for="q148d">Paylaşmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>149. Festplatte</h2>
+    <div class="answer">
+        <input type="radio" name="q149" value="Sabit Disk" id="q149a">
+        <label for="q149a">Sabit Disk</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q149" value="Bellek" id="q149b">
+        <label for="q149b">Bellek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q149" value="İşlemci" id="q149c">
+        <label for="q149c">İşlemci</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q149" value="Ekran Kartı" id="q149d">
+        <label for="q149d">Ekran Kartı</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>150. Voraussetzung</h2>
+    <div class="answer">
+        <input type="radio" name="q150" value="Ön Koşul" id="q150a">
+        <label for="q150a">Ön Koşul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q150" value="Sonuç" id="q150b">
+        <label for="q150b">Sonuç</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q150" value="Şart" id="q150c">
+        <label for="q150c">Şart</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q150" value="Gereklilik" id="q150d">
+        <label for="q150d">Gereklilik</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>151. Wirtschaft</h2>
+    <div class="answer">
+        <input type="radio" name="q151" value="Ekonomi" id="q151a">
+        <label for="q151a">Ekonomi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q151" value="Bilim" id="q151b">
+        <label for="q151b">Bilim</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q151" value="Sanat" id="q151c">
+        <label for="q151c">Sanat</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q151" value="Spor" id="q151d">
+        <label for="q151d">Spor</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>152. Vortrag</h2>
+    <div class="answer">
+        <input type="radio" name="q152" value="Konferans" id="q152a">
+        <label for="q152a">Konferans</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q152" value="Sunum" id="q152b">
+        <label for="q152b">Sunum</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q152" value="Toplantı" id="q152c">
+        <label for="q152c">Toplantı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q152" value="Ders" id="q152d">
+        <label for="q152d">Ders</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>153. präsentieren</h2>
+    <div class="answer">
+        <input type="radio" name="q153" value="Sunmak" id="q153a">
+        <label for="q153a">Sunmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q153" value="Dinlemek" id="q153b">
+        <label for="q153b">Dinlemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q153" value="Göstermek" id="q153c">
+        <label for="q153c">Göstermek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q153" value="İzlemek" id="q153d">
+        <label for="q153d">İzlemek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>154. experte</h2>
+    <div class="answer">
+        <input type="radio" name="q154" value="Uzman" id="q154a">
+        <label for="q154a">Uzman</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q154" value="Amatör" id="q154b">
+        <label for="q154b">Amatör</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q154" value="Öğrenci" id="q154c">
+        <label for="q154c">Öğrenci</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q154" value="Hoca" id="q154d">
+        <label for="q154d">Hoca</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>155. Erfolg</h2>
+    <div class="answer">
+        <input type="radio" name="q155" value="Başarı" id="q155a">
+        <label for="q155a">Başarı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q155" value="Başarısızlık" id="q155b">
+        <label for="q155b">Başarısızlık</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q155" value="Çalışma" id="q155c">
+        <label for="q155c">Çalışma</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q155" value="Deneme" id="q155d">
+        <label for="q155d">Deneme</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>156. streit</h2>
+    <div class="answer">
+        <input type="radio" name="q156" value="Kavga" id="q156a">
+        <label for="q156a">Kavga</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q156" value="Barış" id="q156b">
+        <label for="q156b">Barış</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q156" value="Tartışma" id="q156c">
+        <label for="q156c">Tartışma</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q156" value="Anlaşma" id="q156d">
+        <label for="q156d">Anlaşma</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>157. arger</h2>
+    <div class="answer">
+        <input type="radio" name="q157" value="Öfke" id="q157a">
+        <label for="q157a">Öfke</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q157" value="Mutluluk" id="q157b">
+        <label for="q157b">Mutluluk</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q157" value="Üzüntü" id="q157c">
+        <label for="q157c">Üzüntü</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q157" value="Heyecan" id="q157d">
+        <label for="q157d">Heyecan</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>158. lösen</h2>
+    <div class="answer">
+        <input type="radio" name="q158" value="Çözmek" id="q158a">
+        <label for="q158a">Çözmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q158" value="Bozmak" id="q158b">
+        <label for="q158b">Bozmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q158" value="Yapmak" id="q158c">
+        <label for="q158c">Yapmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q158" value="Denemek" id="q158d">
+        <label for="q158d">Denemek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>159. teilnehmen</h2>
+    <div class="answer">
+        <input type="radio" name="q159" value="Katılmak" id="q159a">
+        <label for="q159a">Katılmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q159" value="Gitmek" id="q159b">
+        <label for="q159b">Gitmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q159" value="Görüşmek" id="q159c">
+        <label for="q159c">Görüşmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q159" value="Gelmek" id="q159d">
+        <label for="q159d">Gelmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>160. Kündigung</h2>
+    <div class="answer">
+        <input type="radio" name="q160" value="İstifa" id="q160a">
+        <label for="q160a">İstifa</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q160" value="Terfi" id="q160b">
+        <label for="q160b">Terfi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q160" value="Başlama" id="q160c">
+        <label for="q160c">Başlama</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q160" value="Devam" id="q160d">
+        <label for="q160d">Devam</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>161. solch</h2>
+    <div class="answer">
+        <input type="radio" name="q161" value="Böyle" id="q161a">
+        <label for="q161a">Böyle</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q161" value="Şöyle" id="q161b">
+        <label for="q161b">Şöyle</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q161" value="O tür" id="q161c">
+        <label for="q161c">O tür</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q161" value="Bu tarz" id="q161d">
+        <label for="q161d">Bu tarz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>162. fürchten</h2>
+    <div class="answer">
+        <input type="radio" name="q162" value="Korkmak" id="q162a">
+        <label for="q162a">Korkmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q162" value="Sevinmek" id="q162b">
+        <label for="q162b">Sevinmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q162" value="Üzülmek" id="q162c">
+        <label for="q162c">Üzülmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q162" value="Heyecanlanmak" id="q162d">
+        <label for="q162d">Heyecanlanmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>163. führen</h2>
+    <div class="answer">
+        <input type="radio" name="q163" value="Yönetmek" id="q163a">
+        <label for="q163a">Yönetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q163" value="İzlemek" id="q163b">
+        <label for="q163b">İzlemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q163" value="Takip etmek" id="q163c">
+        <label for="q163c">Takip etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q163" value="Gitmek" id="q163d">
+        <label for="q163d">Gitmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>164. verhalten</h2>
+    <div class="answer">
+        <input type="radio" name="q164" value="Davranış" id="q164a">
+        <label for="q164a">Davranış</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q164" value="Tutum" id="q164b">
+        <label for="q164b">Tutum</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q164" value="Hareket" id="q164c">
+        <label for="q164c">Hareket</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q164" value="Tepki" id="q164d">
+        <label for="q164d">Tepki</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>165. Einführung</h2>
+    <div class="answer">
+        <input type="radio" name="q165" value="Giriş" id="q165a">
+        <label for="q165a">Giriş</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q165" value="Sonuç" id="q165b">
+        <label for="q165b">Sonuç</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q165" value="Gelişme" id="q165c">
+        <label for="q165c">Gelişme</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q165" value="Özet" id="q165d">
+        <label for="q165d">Özet</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>166. verkehr</h2>
+    <div class="answer">
+        <input type="radio" name="q166" value="Trafik" id="q166a">
+        <label for="q166a">Trafik</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q166" value="Hareket" id="q166b">
+        <label for="q166b">Hareket</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q166" value="Ulaşım" id="q166c">
+        <label for="q166c">Ulaşım</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q166" value="Yol" id="q166d">
+        <label for="q166d">Yol</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>167. verletzen</h2>
+    <div class="answer">
+        <input type="radio" name="q167" value="Yaralamak" id="q167a">
+        <label for="q167a">Yaralamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q167" value="Korumak" id="q167b">
+        <label for="q167b">Korumak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q167" value="Tedavi etmek" id="q167c">
+        <label for="q167c">Tedavi etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q167" value="İyileştirmek" id="q167d">
+        <label for="q167d">İyileştirmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>168. bluten</h2>
+    <div class="answer">
+        <input type="radio" name="q168" value="Kanamak" id="q168a">
+        <label for="q168a">Kanamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q168" value="İyileşmek" id="q168b">
+        <label for="q168b">İyileşmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q168" value="Ağrımak" id="q168c">
+        <label for="q168c">Ağrımak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q168" value="Sızlamak" id="q168d">
+        <label for="q168d">Sızlamak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>169. Notarzt</h2>
+    <div class="answer">
+        <input type="radio" name="q169" value="Acil Doktor" id="q169a">
+        <label for="q169a">Acil Doktor</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q169" value="Cerrah" id="q169b">
+        <label for="q169b">Cerrah</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q169" value="Diş Hekimi" id="q169c">
+        <label for="q169c">Diş Hekimi</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q169" value="Psikolog" id="q169d">
+        <label for="q169d">Psikolog</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>170. nebenbei</h2>
+    <div class="answer">
+        <input type="radio" name="q170" value="Bu arada" id="q170a">
+        <label for="q170a">Bu arada</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q170" value="Ayrıca" id="q170b">
+        <label for="q170b">Ayrıca</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q170" value="Diğer yandan" id="q170c">
+        <label for="q170c">Diğer yandan</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q170" value="Ancak" id="q170d">
+        <label for="q170d">Ancak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>171. Heimat</h2>
+    <div class="answer">
+        <input type="radio" name="q171" value="Memleket" id="q171a">
+        <label for="q171a">Memleket</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q171" value="Ev" id="q171b">
+        <label for="q171b">Ev</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q171" value="Şehir" id="q171c">
+        <label for="q171c">Şehir</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q171" value="Köy" id="q171d">
+        <label for="q171d">Köy</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>172. sogenannt</h2>
+    <div class="answer">
+        <input type="radio" name="q172" value="Sözde" id="q172a">
+        <label for="q172a">Sözde</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q172" value="Gerçek" id="q172b">
+        <label for="q172b">Gerçek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q172" value="Sahte" id="q172c">
+        <label for="q172c">Sahte</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q172" value="Varsayılan" id="q172d">
+        <label for="q172d">Varsayılan</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>173. Tier</h2>
+    <div class="answer">
+        <input type="radio" name="q173" value="Hayvan" id="q173a">
+        <label for="q173a">Hayvan</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q173" value="Bitki" id="q173b">
+        <label for="q173b">Bitki</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q173" value="İnsan" id="q173c">
+        <label for="q173c">İnsan</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q173" value="Bakteri" id="q173d">
+        <label for="q173d">Bakteri</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>174. Rest</h2>
+    <div class="answer">
+        <input type="radio" name="q174" value="Kalan" id="q174a">
+        <label for="q174a">Kalan</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q174" value="Tamamı" id="q174b">
+        <label for="q174b">Tamamı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q174" value="Yarısı" id="q174c">
+        <label for="q174c">Yarısı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q174" value="Hiçbiri" id="q174d">
+        <label for="q174d">Hiçbiri</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>175. bestehen</h2>
+    <div class="answer">
+        <input type="radio" name="q175" value="Başarmak" id="q175a">
+        <label for="q175a">Başarmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q175" value="Kaybetmek" id="q175b">
+        <label for="q175b">Kaybetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q175" value="Başlamak" id="q175c">
+        <label for="q175c">Başlamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q175" value="Bitmek" id="q175d">
+        <label for="q175d">Bitmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>176. realisieren</h2>
+    <div class="answer">
+        <input type="radio" name="q176" value="Gerçekleştirmek" id="q176a">
+        <label for="q176a">Gerçekleştirmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q176" value="Hayal etmek" id="q176b">
+        <label for="q176b">Hayal etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q176" value="Planlamak" id="q176c">
+        <label for="q176c">Planlamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q176" value="Unutmak" id="q176d">
+        <label for="q176d">Unutmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>177. entdecken</h2>
+    <div class="answer">
+        <input type="radio" name="q177" value="Keşfetmek" id="q177a">
+        <label for="q177a">Keşfetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q177" value="Kaybetmek" id="q177b">
+        <label for="q177b">Kaybetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q177" value="Bulmak" id="q177c">
+        <label for="q177c">Bulmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q177" value="Aramak" id="q177d">
+        <label for="q177d">Aramak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>178. kette</h2>
+    <div class="answer">
+        <input type="radio" name="q178" value="Zincir" id="q178a">
+        <label for="q178a">Zincir</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q178" value="Halka" id="q178b">
+        <label for="q178b">Halka</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q178" value="Kilit" id="q178c">
+        <label for="q178c">Kilit</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q178" value="Kanca" id="q178d">
+        <label for="q178d">Kanca</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>179. puppe</h2>
+    <div class="answer">
+        <input type="radio" name="q179" value="Bebek" id="q179a">
+        <label for="q179a">Bebek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q179" value="Oyuncak" id="q179b">
+        <label for="q179b">Oyuncak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q179" value="Araba" id="q179c">
+        <label for="q179c">Araba</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q179" value="Ev" id="q179d">
+        <label for="q179d">Ev</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>180. Motorrad</h2>
+    <div class="answer">
+        <input type="radio" name="q180" value="Motosiklet" id="q180a">
+        <label for="q180a">Motosiklet</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q180" value="Araba" id="q180b">
+        <label for="q180b">Araba</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q180" value="Bisiklet" id="q180c">
+        <label for="q180c">Bisiklet</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q180" value="Kamyon" id="q180d">
+        <label for="q180d">Kamyon</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>181. Geldbeutel</h2>
+    <div class="answer">
+        <input type="radio" name="q181" value="Cüzdan" id="q181a">
+        <label for="q181a">Cüzdan</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q181" value="Çanta" id="q181b">
+        <label for="q181b">Çanta</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q181" value="Ceket" id="q181c">
+        <label for="q181c">Ceket</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q181" value="Pantolon" id="q181d">
+        <label for="q181d">Pantolon</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>182. probieren</h2>
+    <div class="answer">
+        <input type="radio" name="q182" value="Denemek" id="q182a">
+        <label for="q182a">Denemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q182" value="Başarmak" id="q182b">
+        <label for="q182b">Başarmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q182" value="Kaybetmek" id="q182c">
+        <label for="q182c">Kaybetmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q182" value="Vazgeçmek" id="q182d">
+        <label for="q182d">Vazgeçmek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>183. liefern</h2>
+    <div class="answer">
+        <input type="radio" name="q183" value="Teslim etmek" id="q183a">
+        <label for="q183a">Teslim etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q183" value="Almak" id="q183b">
+        <label for="q183b">Almak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q183" value="Göndermek" id="q183c">
+        <label for="q183c">Göndermek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q183" value="Beklemek" id="q183d">
+        <label for="q183d">Beklemek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>184. zuverlässig</h2>
+    <div class="answer">
+        <input type="radio" name="q184" value="Güvenilir" id="q184a">
+        <label for="q184a">Güvenilir</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q184" value="Güvensiz" id="q184b">
+        <label for="q184b">Güvensiz</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q184" value="Dürüst" id="q184c">
+        <label for="q184c">Dürüst</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q184" value="Şüpheli" id="q184d">
+        <label for="q184d">Şüpheli</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>185. Schachtel</h2>
+    <div class="answer">
+        <input type="radio" name="q185" value="Kutu" id="q185a">
+        <label for="q185a">Kutu</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q185" value="Poşet" id="q185b">
+        <label for="q185b">Poşet</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q185" value="Çanta" id="q185c">
+        <label for="q185c">Çanta</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q185" value="Sepet" id="q185d">
+        <label for="q185d">Sepet</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>186. ausdrucken</h2>
+    <div class="answer">
+        <input type="radio" name="q186" value="Yazdırmak" id="q186a">
+        <label for="q186a">Yazdırmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q186" value="Kopyalamak" id="q186b">
+        <label for="q186b">Kopyalamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q186" value="Kesmek" id="q186c">
+        <label for="q186c">Kesmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q186" value="Yapıştırmak" id="q186d">
+        <label for="q186d">Yapıştırmak</label>
+    </div>
+</div>
+
+<h2>188. Briefmarke</h2>
+    <div class="answer">
+        <input type="radio" name="q188" value="Pul" id="q188a">
+        <label for="q188a">Pul</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q188" value="Zarf" id="q188b">
+        <label for="q188b">Zarf</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q188" value="Posta" id="q188c">
+        <label for="q188c">Posta</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q188" value="Kargo" id="q188d">
+        <label for="q188d">Kargo</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>189. Kirche</h2>
+    <div class="answer">
+        <input type="radio" name="q189" value="Kilise" id="q189a">
+        <label for="q189a">Kilise</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q189" value="Cami" id="q189b">
+        <label for="q189b">Cami</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q189" value="Sinagog" id="q189c">
+        <label for="q189c">Sinagog</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q189" value="Tapınak" id="q189d">
+        <label for="q189d">Tapınak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>190. wahnsinnig</h2>
+    <div class="answer">
+        <input type="radio" name="q190" value="Çılgın" id="q190a">
+        <label for="q190a">Çılgın</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q190" value="Akıllı" id="q190b">
+        <label for="q190b">Akıllı</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q190" value="Deli" id="q190c">
+        <label for="q190c">Deli</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q190" value="Mantıklı" id="q190d">
+        <label for="q190d">Mantıklı</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>191. Stimmung</h2>
+    <div class="answer">
+        <input type="radio" name="q191" value="Atmosfer" id="q191a">
+        <label for="q191a">Atmosfer</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q191" value="Durum" id="q191b">
+        <label for="q191b">Durum</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q191" value="Hava" id="q191c">
+        <label for="q191c">Hava</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q191" value="Moda" id="q191d">
+        <label for="q191d">Moda</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>192. blöd</h2>
+    <div class="answer">
+        <input type="radio" name="q192" value="Aptal" id="q192a">
+        <label for="q192a">Aptal</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q192" value="Zeki" id="q192b">
+        <label for="q192b">Zeki</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q192" value="Komik" id="q192c">
+        <label for="q192c">Komik</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q192" value="Ciddi" id="q192d">
+        <label for="q192d">Ciddi</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>193. Grüßen</h2>
+    <div class="answer">
+        <input type="radio" name="q193" value="Selamlamak" id="q193a">
+        <label for="q193a">Selamlamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q193" value="Görüşmek" id="q193b">
+        <label for="q193b">Görüşmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q193" value="Konuşmak" id="q193c">
+        <label for="q193c">Konuşmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q193" value="Dinlemek" id="q193d">
+        <label for="q193d">Dinlemek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>194. weinen</h2>
+    <div class="answer">
+        <input type="radio" name="q194" value="Ağlamak" id="q194a">
+        <label for="q194a">Ağlamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q194" value="Gülmek" id="q194b">
+        <label for="q194b">Gülmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q194" value="Bağırmak" id="q194c">
+        <label for="q194c">Bağırmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q194" value="Sessiz olmak" id="q194d">
+        <label for="q194d">Sessiz olmak</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>195. torte</h2>
+    <div class="answer">
+        <input type="radio" name="q195" value="Pasta" id="q195a">
+        <label for="q195a">Pasta</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q195" value="Kurabiye" id="q195b">
+        <label for="q195b">Kurabiye</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q195" value="Ekmek" id="q195c">
+        <label for="q195c">Ekmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q195" value="Tatlı" id="q195d">
+        <label for="q195d">Tatlı</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>196. übrigens</h2>
+    <div class="answer">
+        <input type="radio" name="q196" value="Bu arada" id="q196a">
+        <label for="q196a">Bu arada</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q196" value="Ancak" id="q196b">
+        <label for="q196b">Ancak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q196" value="Fakat" id="q196c">
+        <label for="q196c">Fakat</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q196" value="Bu yüzden" id="q196d">
+        <label for="q196d">Bu yüzden</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>197. treten</h2>
+    <div class="answer">
+        <input type="radio" name="q197" value="Adım atmak" id="q197a">
+        <label for="q197a">Adım atmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q197" value="Koşmak" id="q197b">
+        <label for="q197b">Koşmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q197" value="Zıplamak" id="q197c">
+        <label for="q197c">Zıplamak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q197" value="Yürümek" id="q197d">
+        <label for="q197d">Yürümek</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>198. nervös</h2>
+    <div class="answer">
+        <input type="radio" name="q198" value="Gergin" id="q198a">
+        <label for="q198a">Gergin</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q198" value="Rahat" id="q198b">
+        <label for="q198b">Rahat</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q198" value="Kızgın" id="q198c">
+        <label for="q198c">Kızgın</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q198" value="Mutlu" id="q198d">
+        <label for="q198d">Mutlu</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>199. persönlich</h2>
+    <div class="answer">
+        <input type="radio" name="q199" value="Kişisel" id="q199a">
+        <label for="q199a">Kişisel</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q199" value="Genel" id="q199b">
+        <label for="q199b">Genel</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q199" value="Özel" id="q199c">
+        <label for="q199c">Özel</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q199" value="Gizli" id="q199d">
+        <label for="q199d">Gizli</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>200. pflaume</h2>
+    <div class="answer">
+        <input type="radio" name="q200" value="Erik" id="q200a">
+        <label for="q200a">Erik</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q200" value="Elma" id="q200b">
+        <label for="q200b">Elma</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q200" value="Armut" id="q200c">
+        <label for="q200c">Armut</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q200" value="Muz" id="q200d">
+        <label for="q200d">Muz</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>201. herz</h2>
+    <div class="answer">
+        <input type="radio" name="q201" value="Kalp" id="q201a">
+        <label for="q201a">Kalp</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q201" value="Beyin" id="q201b">
+        <label for="q201b">Beyin</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q201" value="Mide" id="q201c">
+        <label for="q201c">Mide</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q201" value="Ciğer" id="q201d">
+        <label for="q201d">Ciğer</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>202. per</h2>
+    <div class="answer">
+        <input type="radio" name="q202" value="İle" id="q202a">
+        <label for="q202a">İle</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q202" value="Kadar" id="q202b">
+        <label for="q202b">Kadar</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q202" value="İçin" id="q202c">
+        <label for="q202c">İçin</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q202" value="Göre" id="q202d">
+        <label for="q202d">Göre</label>
+    </div>
+</div>
+
+<div class="question">
+    <h2>203. unterhalten</h2>
+    <div class="answer">
+        <input type="radio" name="q203" value="Sohbet etmek" id="q203a">
+        <label for="q203a">Sohbet etmek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q203" value="Dinlemek" id="q203b">
+        <label for="q203b">Dinlemek</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q203" value="Anlatmak" id="q203c">
+        <label for="q203c">Anlatmak</label>
+    </div>
+    <div class="answer">
+        <input type="radio" name="q203" value="Sessiz olmak" id="q203d">
+        <label for="q203d">Sessiz olmak</label>
+    </div>
+</div>
+        <!-- Buraya diğer sorular eklenebilir -->
+        <button type="button" onclick="checkAnswers()">Sonuçları Gör</button>
+    </form>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: "Paydos",
+                q2: "Hak edilmiş",
+                q3: "Geçerli olmak",
+                q4: "İşletme",
+                q5: "Takım",
+                 q6: "Korku",
+              q7: "Hissetmek",
+    q8: "Abartılı",
+    q9: "Ekstra",
+    q10: "Silinmiş",
+    q11: "Toplum",
+    q12: "Gelecek",
+    q13: "Başvurmak",
+    q14: "Başarılı",
+    q15: "Lise diploması",
+    q16: "En azından",
+    q17: "Harcamak",
+    q18: "Düğün",
+    q19: "Uyanık",
+    q20: "Karar vermek"
+
+                // Diğer soruların doğru cevaplarını buraya ekle
+            };
+
+            let correctAnswers = 0;
+
+            for (let question in answers) {
+                const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+                const correctOption = answers[question];
+
+                if (selectedOption) {
+                    const label = selectedOption.nextElementSibling;
+                    if (selectedOption.value === correctOption) {
+                        label.classList.add("correct");
+                        correctAnswers++;
+                    } else {
+                        label.classList.add("incorrect");
+                    }
+                }
+
+                // Tüm seçenekleri renklendir
+                const options = document.querySelectorAll(`input[name="${question}"]`);
+                options.forEach(option => {
+                    const label = option.nextElementSibling;
+                    if (option.value === correctOption) {
+                        label.classList.add("correct");
+                    } else {
+                        label.classList.add("incorrect");
+                    }
+                });
+            }
+
+            alert(`Doğru Cevaplar: ${correctAnswers}/${Object.keys(answers).length}`);
+        }
+    </script>
+</body>
+</html>
